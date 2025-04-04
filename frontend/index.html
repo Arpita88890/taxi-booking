@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxi Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="authContainer">
+    <h1>Taxi Booking System</h1>
+    <form id="loginForm">
+      <h3>Login</h3>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <form id="registerForm">
+      <h3>Register</h3>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="regEmail" placeholder="Email" required>
+      <input type="password" id="regPassword" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <button id="viewBookings">View Booking History</button>
+  </div>
+
+  <div id="bookingContainer" style="display: none;">
+    <h1>Book a Taxi</h1>
+    <form id="bookingForm">
+      <input type="text" id="pickup" placeholder="Pickup Location" required>
+      <input type="text" id="dropoff" placeholder="Dropoff Location" required>
+      <input type="datetime-local" id="date" required>
+      <button type="submit">Book Taxi</button>
+    </form>
+    <h2>Booking History</h2>
+    <ul id="bookingHistory"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
